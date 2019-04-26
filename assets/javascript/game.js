@@ -18,10 +18,17 @@ var psychic = {
                 this.guessesLeft = 9;
                 this.guessCount = 0;
                 this.userGuess = [];
+                document.getElementById("guesses-left").style.borderColor = "greenyellow";
             } else {
                 this.guessesLeft--;
                 this.userGuess[this.guessCount] = user;
                 this.guessCount++;
+                if (this.guessesLeft < 6 && this.guessesLeft > 3){
+                    document.getElementById("guesses-left").style.borderColor = "orange";
+                }
+                else if(this.guessesLeft < 3){
+                    document.getElementById("guesses-left").style.borderColor = "red";
+                }
             }
         } else {
             this.losses++;
@@ -30,6 +37,8 @@ var psychic = {
             this.guessCount = 0;
             this.userGuess = [];
             alert("Sorry, you didn't get it!")
+            document.getElementById("guesses-left").style.borderColor = "greenyellow";
+
         }
     },
     reWrite: function() {

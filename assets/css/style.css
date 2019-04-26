@@ -1,0 +1,39 @@
+* {
+    text-align: center;
+    background: lightslategrey;
+    font-family: 'Raleway', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+#wins{
+    border: green solid 2px;
+    margin-top: 1rem;
+    background: lightgrey;
+}
+
+#losses{
+    border: red solid 2px;
+    margin-top: 1rem;
+    background: lightgrey;
+}
+
+#guesses-left{
+    border: greenyellow solid 2px;
+    margin-top: 1rem;
+    background: lightgrey;
+}
+
+#guesses{
+    border: black solid 2px;
+    margin-top: 1rem;
+    background: lightgrey;
+}
+
+p{
+    margin: auto;
+    max-width: 240px;
+    width: auto;
+}
